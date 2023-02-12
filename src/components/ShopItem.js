@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import Items from "../items";
 
 function ShopItemFunc (props) {
   const { item } = props;
@@ -23,7 +22,7 @@ function ShopItemFunc (props) {
   }
   
   ShopItemFunc.propTypes = {
-    item: PropTypes.instanceOf(Items).isRequired,
+    //item: PropTypes.instanceOf(UserModel).isRequired,
     item: PropTypes.shape({
       brand: PropTypes.string, 
       title: PropTypes.string, 
